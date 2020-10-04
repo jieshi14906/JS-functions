@@ -5,11 +5,11 @@ fetch("https://jsonplaceholder.typicode.com/todos")
       if (todo.completed) {
         acc[todo.userId] === undefined
           ? (acc[todo.userId] = 1)
-          : (acc[todo.userId] += 1);
+          : (acc[todo.userId] += 1)
       }
-      return acc;
-    }, {});
-    console.log(totalCompleted);
+      return acc
+    }, {})
+    console.log(totalCompleted)
   })
   .catch(function(err) {
     console.log(err);
